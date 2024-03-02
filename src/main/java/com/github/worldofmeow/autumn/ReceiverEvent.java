@@ -1,4 +1,4 @@
 package com.github.worldofmeow.autumn;
 
-public class Event {
+public class ReceiverEvent {
 }
