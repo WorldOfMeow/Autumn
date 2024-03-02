@@ -1,6 +1,7 @@
 package com.github.worldofmeow.autumn;
 
 import com.sun.javafx.UnmodifiableArrayList;
+import com.sun.net.httpserver.HttpExchange;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,13 +15,13 @@ public interface AutumnReceiver {
     boolean start();
     boolean stop();
     boolean isRunning();
-    List<BiConsumer<AutumnReceiver, ReceiverEvent>> handlers = new ArrayList<>();
-    default void addHandler(BiConsumer<AutumnReceiver, ReceiverEvent> handler) {
+    List<BiConsumer<AutumnReceiver, AHttpExchange>> handlers = new ArrayList<>();
+    default void addHandler(BiConsumer<AutumnReceiver, AHttpExchange> handler) {
         if(!handlers.contains(handler)) {
             handlers.add(handler);
         }
     }
-    default Iterator<BiConsumer<AutumnReceiver, ReceiverEvent>> getHandlers() {
+    default Iterator<BiConsumer<AutumnReceiver, AHttpExchange>> getHandlers() {
         return handlers.iterator();
     }
 }
