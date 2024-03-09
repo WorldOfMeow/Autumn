@@ -52,3 +52,5 @@ gradle/wrapper/gradle-wrapper.properties
 gradlew
 gradlew.bat
 .idea/uiDesigner.xml
+.idea/copyright/cprgt.xml
+.idea/copyright/profiles_settings.xml
