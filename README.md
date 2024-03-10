@@ -1,5 +1,9 @@
-#Autumn Http Library
-### This Library aims to make Http Servers easy and uncomplicated to integrate into any Project in just a few steps. No External Libraries needed!  
+# Autumn Http Library
+### This Library aims to make Http Servers easy and uncomplicated to integrate into any Project in just a few steps. No External Libraries needed!
+
+## Current Requirements:
+- Java 8
+
 ## Simple Example:
 ```java
     public static void main(String[] args) {
