@@ -78,12 +78,11 @@ public class AutumnHttpServer {
         return stop(0);
     }
     public AutumnHttpServer setRoute(String route, RequestHandler handler) {
+        removeRoute(route);
+        handlers.put(route, handler);
         if (server != null) {
-            removeRoute(route);
             server.createContext(route, handler);
         }
-        handlers.remove(route);
-        handlers.put(route, handler);
         return this;
     }
     public AutumnHttpServer removeRoute(String route) {
