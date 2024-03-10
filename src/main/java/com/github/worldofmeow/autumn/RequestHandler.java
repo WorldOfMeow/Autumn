@@ -6,9 +6,9 @@ import com.sun.net.httpserver.HttpHandler;
 public class RequestHandler implements HttpHandler {
     @Override
     public final void handle(HttpExchange exchange) {
-        request(new AHttpExchange(exchange));
+        request(new SimpleHttpExchange(exchange));
     }
-    public void request(AHttpExchange exchange) {
+    public void request(SimpleHttpExchange exchange) {
 
     }
 }

@@ -79,7 +79,8 @@ public enum ResponseCode {
     Not_Extended(510),
     Network_Authentication_Required(511);
 
-
-    ResponseCode(int i) {}
-
+    public final int code;
+    ResponseCode(int code) {
+        this.code = code;
+    }
 }

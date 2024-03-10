@@ -87,10 +87,12 @@ public class AutumnHttpServer {
         return this;
     }
     public AutumnHttpServer removeRoute(String route) {
-        if (server != null) {
-            server.removeContext(route);
+        if(handlers.containsKey(route)) {
+            handlers.remove(route);
+            if (server != null) {
+                server.removeContext(route);
+            }
         }
-        handlers.remove(route);
         return this;
     }
 }
