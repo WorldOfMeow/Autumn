@@ -54,3 +54,6 @@ gradlew.bat
 .idea/uiDesigner.xml
 .idea/copyright/cprgt.xml
 .idea/copyright/profiles_settings.xml
+/src/test/java/
+src/test/java/Test.java
+Playlist.txt
